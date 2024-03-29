@@ -11,10 +11,10 @@ const app = express();
 app.use(bodyParser.json());
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/food_delivery_app', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+// mongoose.connect('mongodb://localhost:27017/food_delivery_app', {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true,
+// });
 
 // Swagger API documentation
 const swaggerDocument = YAML.load('./src/swagger.yaml');
